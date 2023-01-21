@@ -10,7 +10,7 @@ namespace Firehose.Web.Authors
     {
         public string FirstName => "Alain";
         public string LastName => "Assaf";
-        public string ShortBioOrTagLine => "EUC Engineer/Architect | Citrix CTA | CCE-V Certified | CUGC Leader | PowerShell Fanatic";
+        public string ShortBioOrTagLine => "EUC Architect | Citrix CTA | CCE-V Certified | CUGC Leader | PowerShell Fanatic | Cloud Initiate";
         public string StateOrRegion => "North Carolina, USA";
         public string EmailAddress => "alainassaf@outlook.com";
         public string TwitterHandle => "alainassaf";
@@ -23,7 +23,7 @@ namespace Firehose.Web.Authors
 		public bool Filter(SyndicationItem item)
     	{
         	// This filters out only the posts that have the "PowerShell" category
-        	return item.Categories?.Any(c => c.Name.ToLowerInvariant().Equals("powershell")) ?? false;
+        	// return item.Categories?.Any(c => c.Name.ToLowerInvariant().Equals("powershell")) ?? false;
 		}
 		public string FeedLanguageCode => "en";
 	}
